@@ -1,0 +1,51 @@
+* {box-sizing: border-box;}
+
+html {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+  background-color: oldlace;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 30px;
+  color: darkolivegreen;
+}
+
+img {
+  border: 1px solid darkolivegreen;
+  border-radius: 5px;
+}
+
+#search {
+  padding: 15px;
+  background-color: white;
+  border: 2px solid darkolivegreen;
+  border-radius: 5px;
+  box-shadow: darkgoldenrod 1px 1px 5px;
+  width: 45%;
+}
+
+#search:focus {
+  background: white; 
+  outline: 1px;
+  outline-color: darkolivegreen;
+  outline-style: groove;
+  box-shadow: 2px 2px 8px darkgoldenrod;
+  transition: .75s;
+}
+
+.gallery {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 25px;
+  width: 90%;
+  max-width: 1000px; 
+  margin: 20px auto;
+}
